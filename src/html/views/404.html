@@ -1,0 +1,61 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+      <div class="errorpage">
+
+        <div class="errorpage__image"> 
+          <div class="errorpage__img"><img src="img/404.png" alt=""></div>
+        </div>
+        <div class="container">
+
+        <div class="errorpage__main">
+          <div class="errorpage__content">
+            <div class="errorpage__title">Мы не смогли найти вашу страницу</div>
+            <div class="errorpage__text">Но мы подобрали для вас несколько полезных ссылок</div>
+            <div class="errorpage__links">
+              <ul>
+                <li>
+                  <a href="">Главная</a>
+                </li>
+                <li>
+                  <a href="">Оплата и доставка</a>
+                </li>
+                <li>
+                  <a href="">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

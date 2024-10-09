@@ -1,0 +1,1783 @@
+<% var data = { title: "MAIN", author: "" }; %> <%= _.template(require('../includes/head.html').default)(data) %> <%= _.template(require('../includes/header.html').default)(data) %>
+<main>
+  <div class="page">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span><img src="img/Home.svg" alt="" /></span>
+              </a>
+            </li>
+            <li>
+              <a href=""><span>Каталог</span></a>
+            </li>
+            <li><span>Фонари и гирлянды</span></li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+
+    <div class="mobiledetail onlyMobile" id="mobpriceFixed">
+      <div class="container">
+        <div class="detailbuy__buyblock">
+          <div class="buyblock">
+            <div class="productcard__buy">
+              <div class="productcard__prices">
+                <div class="productcard__topprice">
+                  <div class="productcard__oldprice">762.92</div>
+                  <div class="productcard__badge">12%</div>
+                </div>
+                <!-- /.productcard__oldprice -->
+                <div class="productcard__mainprice">
+                  <div class="productcard__price">
+                    <div class="productcard__pricevalue">674.94<span class="rouble">₽</span>/кг</div>
+                  </div>
+                  <!-- /.productcard__price -->
+                </div>
+                <!-- /.productcard__mainprice -->
+              </div>
+              <!-- /.productcard__prices -->
+              <div class="buyblock__buttons flex items-center">
+                <div class="productcard__cart">
+                   <!-- <button class="tocart btn btn_main js-addmodal active">
+                      <div class="tocart__content tocart__after">
+                        <span>В корзине</span>
+                      </div>
+                    </button> -->
+                    <!-- <button class="tocart btn btn_main js-addmodal active">
+                      <div class="tocart__content tocart__before">
+                        <span>Купить</span>
+                      </div>
+                    </button> -->
+                    <button class="tocart btn btn_main js-addmodal">
+                      <div class="tocart__content tocart__before">
+                        <span>В корзину</span>
+                      </div>
+                      <div class="tocart__content tocart__after">
+                        <span>В корзине</span>
+                      </div>
+                    </button>
+                </div>
+              </div>
+              <!-- /.buyblock__buttons -->
+            </div>
+          </div>
+          <!-- /.buyblock -->
+        </div>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.mobilepanel -->
+
+    <div class="productpage detail">
+      <div class="container">
+        <div class="productpage__main flex content-between">
+         
+          <div class="productpage__left">
+            <!-- <div class="productcard__stickers">
+              <div class="productcard__sticker">
+                <div class="productsticker productsticker_red">
+                  <span class="productsticker__text">Акция</span>
+                </div>
+              </div>
+              <div class="productcard__sticker">
+                <div class="productsticker productsticker_yellow">
+                  <span class="productsticker__text">ХИТ</span>
+                </div>
+              </div>
+              <div class="productcard__sticker">
+                <div class="productsticker productsticker_blue">
+                  <span class="productsticker__text">Новинка</span>
+                </div>
+              </div>
+              
+            </div> -->
+            <div class="productpage__images detailslider">
+              <div class="detailslider__wrapper">
+                <div thumbsSlider="" class="swiper detailswiperpreview">
+                  <div class="swiper-scrollbar"></div>
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img src="img/detail1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="previewvideo">
+                        <div class="previewvideo__wrapper">
+                          <div class="previewvideo__icon"><img src="img/Youtube.svg" alt=""></div>
+                          <div class="previewvideo__text">Видео</div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail12.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail13.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail12.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail13.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail12.png" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img src="img/detail13.png" />
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper detailswiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <a href="img/detail1.png" data-lightbox="detail"><img src="img/detail1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <span class="onlyDesktop">
+                        <iframe data-loader="youtube"  data-src="7X8II6J-6mU?enablejsapi=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                      </span>
+                      <span class="onlyMobile">
+                        <a class="youtubepopup" href="#!" data-link="//www.youtube.com/embed/7X8II6J-6mU?enablejsapi=1" tabindex="0">
+                          <div class="youtubepopup__image">
+                              <div class="youtubepopup__img"><img src="//img.youtube.com/vi/7X8II6J-6mU/0.jpg" alt=""></div>
+                          </div> 
+                        </a>
+                      </span>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail12.png" data-lightbox="detail"><img src="img/detail12.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail13.png" data-lightbox="detail"><img src="img/detail13.png" /></a>
+                    </div>
+                   
+                    <div class="swiper-slide">
+                      <a href="img/detail1.png" data-lightbox="detail"><img src="img/detail1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail12.png" data-lightbox="detail"><img src="img/detail12.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail13.png" data-lightbox="detail"><img src="img/detail13.png" /></a>
+                    </div>
+                   
+                    <div class="swiper-slide">
+                      <a href="img/detail1.png" data-lightbox="detail"><img src="img/detail1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail12.png" data-lightbox="detail"><img src="img/detail12.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                      <a href="img/detail13.png" data-lightbox="detail"><img src="img/detail13.png" /></a>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="detailslider-pagination"></div>
+            </div>
+            <!-- /.productpage__images -->
+          </div>
+          <!-- /.productpage__left -->
+          <div class="productpage__right">
+            <div class="productpage__info detailinfo">
+              <div class="detailinfo__title ">
+                <h1>Светодиодная гирлянда ФС-12</h1>
+              </div>
+              <!-- /.detailinfo__title -->
+              <div class="detailinfo__header ">
+                <div class="detailinfo__reviews">
+                  <div class="cardrating cardrating_large">
+                    <div class="cardrating__item">
+                      <div class="cardrating__form">
+                        <div class="cardrating__value">
+                          <span>4</span>
+                        </div>
+                        <span class="score">
+                          <div class="score-wrap">
+                            <span class="rat-stars-active stars-active">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                            </span>
+                            <span class="stars-inactive">
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                              <i class="fa fa-star-o" aria-hidden="true"></i>
+                            </span>
+                          </div>
+                        </span>
+                      </div>
+                      <div class="detailinfo__count">
+                        <a href="#detailtabs">32 отзыва</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.detailinfo__reviews -->
+                <div class="detailinfo__wishlist">
+                  <a href="#" class="wishlist__link">
+                    <span class="wishlist__icon">
+                      <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4.69935 0.766663C2.47824 0.766663 0.666016 2.57889 0.666016 4.8C0.666016 6.30192 1.79815 7.71606 3.17825 9.16634C4.55836 10.6166 6.25709 12.0855 7.61048 13.4389C7.71363 13.542 7.8535 13.5999 7.99935 13.5999C8.14519 13.5999 8.28507 13.542 8.38822 13.4389C9.74161 12.0855 11.4403 10.6166 12.8204 9.16634C14.2005 7.71606 15.3327 6.30192 15.3327 4.8C15.3327 2.57889 13.5205 0.766663 11.2993 0.766663C10.0247 0.766663 8.91485 1.45104 7.99935 2.6136C7.08385 1.45104 5.97404 0.766663 4.69935 0.766663ZM4.69935 1.86666C5.77316 1.86666 6.66699 2.43808 7.53457 3.81028C7.58418 3.88866 7.65281 3.95323 7.73407 3.99796C7.81533 4.0427 7.90659 4.06616 7.99935 4.06616C8.09211 4.06616 8.18337 4.0427 8.26463 3.99796C8.34589 3.95323 8.41452 3.88866 8.46413 3.81028C9.33171 2.43808 10.2255 1.86666 11.2993 1.86666C12.926 1.86666 14.2327 3.1733 14.2327 4.8C14.2327 5.68141 13.3482 7.01727 12.0241 8.40866C10.8167 9.67747 9.3158 11.0031 7.99935 12.2866C6.6829 11.0031 5.18203 9.67747 3.97461 8.40866C2.65055 7.01727 1.76602 5.68141 1.76602 4.8C1.76602 3.1733 3.07265 1.86666 4.69935 1.86666Z"
+                          fill="#35373D"
+                        />
+                      </svg>
+                    </span>
+                    <span class="wishlist__text">В избранное</span>
+                  </a>
+                </div>
+                <!-- /.detailinfo__washlist -->
+              </div>
+              <!-- /.detailinfo__header -->
+              <div class="detailinfo__content">
+                <div class="detailinfo__buyblock">
+                  <div class="detailbuy">
+                    <form action="#">
+                      <div class="detailbuy__options">
+                        <div class="formblock">
+                            <div class="formblock__row formblock__row_wrap">
+                              <div class="formblock__col">
+                                <div class="formblock__label">Шаг</span></div>
+                                <div class="formblock__input">
+                                  <div class="select">
+                                    <select name="" id="">
+                                      <option value="2">2</option>
+                                      <option value="3">3</option>
+                                      <option value="4">4</option>
+                                    </select>
+                                  </div>
+                                 
+                                </div>
+                              </div>
+                              <div class="formblock__col">
+                                <div class="formblock__label">Напряжение</span></div>
+                                <div class="formblock__input">
+                                  <div class="select">
+                                    <select name="" id="">
+                                      <option value="12">12</option>
+                                      <option value="13">13</option>
+                                      <option value="14">14</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="formblock__col">
+                                <div class="formblock__label">Длина гирлянды</span></div>
+                                <div class="formblock__input">
+                                  <div class="select">
+                                    <select name="" id="">
+                                      <option value="100">100 м</option>
+                                      <option value="120">120 м</option>
+                                      <option value="130">130 м</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="formblock__col">
+                                <div class="formblock__label">Блок питания</span></div>
+                                <div class="formblock__input">
+                                  <div class="select">
+                                    <select name="" id="">
+                                      <option value="Нет">Нет</option>
+                                      <option value="Да">Да</option>
+                                    </select>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            </div>
+                        </div>
+                      </div>
+                      <!-- /.detailbuy__options -->
+                      <div class="detailbuy__buyblock">
+                        <div class="buyblock">
+                          <div class="productcard__pricecaption">Цена комплекта</div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">7 200</div>
+                                <div class="productcard__badge">30%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">5 800 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="buyblock__buttons flex items-center">
+                              <!-- <div class="oneclick"><a href="#" class=" btn_border">Купить в 1 клик</a></div> -->
+                              <div class="productcard__cart">
+                                <button class="tocart btn btn_main js-addmodal">
+                                  <div class="tocart__content tocart__before">
+                                    <span>В корзину</span>
+                                  </div>
+                                  <div class="tocart__content tocart__after">
+                                    <span>В корзине</span>
+                                  </div>
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+       
+       
+        <div class="productpage__content">
+          <div class="sitetabs">
+            <div class="sitetabs__header">
+              <ul class="">
+                <li class="active"><span class="sitetabs__title">О товаре</span></li>
+                <li>
+                  <span class="sitetabs__title">Характеристики</span>
+                </li>
+                <li class="sitetab--reviews">
+                  <span class="sitetabs__title">Отзывы</span>
+                </li>
+                <li><span class="sitetabs__title">Доставка и оплата</span></li>
+              </ul>
+            </div>
+            <div class="sitetabs__wrapper">
+              <div class="sitetabs__content active">
+                <h2>Описание</h2>
+                <div class="sitetabs__main">
+                  
+
+                  <div class="description">
+                    <p>Длина гирлянды и шаг могут быть любыми, для более подробной информации обращайтесь к менеджерам по тел. 8(499)394-39-31 или  8(800)444-65-60</p>
+                    <ul>
+                      <li>Гирлянда сигнальная светодиодная из фонарей сигнальных <b>ФС-12</b> 
+                      </li>
+                      <li>Напряжение – <b>12 V</b></li>
+                      <li>Потребление одного фонаря  <b>ФС-12 — 0.25 Ватт</b>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.description -->
+                </div>
+              </div>
+              <div class="sitetabs__content">
+                <h2>Характеристики</h2>
+
+                <div class="sitetabs__main">
+
+                  <div class="description">
+                    <p>Длина гирлянды и шаг могут быть любыми, для более подробной информации обращайтесь к менеджерам по тел. 8(499)394-39-31 или  8(800)444-65-60</p>
+                    <ul>
+                      <li>Гирлянда сигнальная светодиодная из фонарей сигнальных <b>ФС-12</b> 
+                      </li>
+                      <li>Напряжение – <b>12 V</b></li>
+                      <li>Потребление одного фонаря  <b>ФС-12 — 0.25 Ватт</b>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- /.description -->
+                </div>
+              </div>
+              <div class="sitetabs__content" id="detailtabs">
+                <h2>Отзывы</h2>
+
+                <div class="sitetabs__main">
+                  <div class="reviews">
+                    <div class="reviews__title">Чтобы добавить отзыв, Вы должны <a href="#">авторизоваться</a> на сайте.</div>
+                   <div class="reviews__items">
+                    <div class="reviewslider__slide">
+                      <div class="reviewcontent">
+                        <div class="reviewcontent__text">
+                          <div class="reviewcontent__content" data-limit="165">Таким образом постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения соответствующий условий активизации. Разнообразный и богатый опыт сложившаяся структура организации обеспечивает широкому кругу (специалистов) участие в формировании новых предложений. Идейные соображения высшего порядка, а также консультация с широким активом требуют от нас анализа форм развития.</div>
+                          </div>
+      
+                        <div class="reviewcontent__info">
+                          <div class="reviewcontent__image">
+                            <div class="reviewcontent__img"><img src="img/review1.png" alt=""></div>
+                          </div>
+                          <div class="reviewcontent__data">
+                            <div class="reviewcontent__name">Елизавета В.</div>
+                            <div class="reviewcontent__rating">
+                              <div class="cardrating__value">
+                                <span>4</span>
+                              </div>
+                              <span class="score">
+                                <div class="score-wrap">
+                                  <span class="rat-stars-active stars-active">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                  <span class="stars-inactive">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviewslider__slide">
+                      <div class="reviewcontent">
+                        <div class="reviewcontent__text">
+                          <div class="reviewcontent__content" data-limit="162">Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! укрепление и развитие структуры позволяет выполнять важные задания по разработке форм развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития.
+                            <br> Повседневная практика показывает, что постоянный количественный рост и сфера нашей активности обеспечивает широкому кругу (специалистов) участие в формировании систем массового участия. Товарищи! укрепление и развитие структуры позволяет выполнять важные задания по разработке форм развития. Идейные соображения высшего порядка, а также постоянный количественный рост и сфера нашей активности играет важную роль в формировании дальнейших направлений развития.</div> </div>
+                        <div class="reviewcontent__info">
+                          <div class="reviewcontent__image">
+                            <div class="reviewcontent__img"><img src="img/review2.png" alt=""></div>
+                          </div>
+                          <div class="reviewcontent__data">
+                            <div class="reviewcontent__name">Андрей М.</div>
+                            <div class="reviewcontent__rating">
+                              <div class="cardrating__value">
+                                <span>5</span>
+                              </div>
+                              <span class="score">
+                                <div class="score-wrap">
+                                  <span class="rat-stars-active stars-active">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                  <span class="stars-inactive">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="reviewslider__slide">
+                      <div class="reviewcontent">
+                        <div class="reviewcontent__text">
+                          <div class="reviewcontent__content"  data-limit="162">Не следует, однако забывать, что постоянный количественный рост и сфера нашей активности требуют от нас анализа модели развития. Повседневная практика показывает, что постоянное информационно-пропагандистское обеспечение нашей деятельности требуют определения и уточнения систем массового участия.</div>
+                        </div>
+                        <div class="reviewcontent__info">
+                          <div class="reviewcontent__image">
+                            <div class="reviewcontent__img"><img src="img/review3.png" alt=""></div>
+                          </div>
+                          <div class="reviewcontent__data">
+                            <div class="reviewcontent__name">Константин К.</div>
+                            <div class="reviewcontent__rating">
+                              <div class="cardrating__value">
+                                <span>3</span>
+                              </div>
+                              <span class="score">
+                                <div class="score-wrap">
+                                  <span class="rat-stars-active stars-active">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                  <span class="stars-inactive">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                  </span>
+                                </div>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+              <div class="sitetabs__content">
+                <h2>Доставка и оплата</h2>
+
+                <div class="sitetabs__main">
+                  <p>Здесь ничего нет</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.productpage__content -->
+      </div>
+      <!-- /.container -->
+      <div class="productpage__footer" data-block="productslider">
+        <div class="pageblocksl">
+          <div class="container">
+            <div class="blockheader flex items-center content-between">
+              <div class="blockheader__left">
+                <h2>Другие товары</h2>
+                <a href="#">Смотреть все</a>
+              </div>
+              <!-- /.blockheader__left -->
+              <div>
+                <div class="sliderarrows flex onlyMobile">
+                  <div class="slider__arrow slider__arrow_left productslider__arrow_left"><img src="img/sliderleft.svg" alt=""></div>
+                  <div class="slider__arrow slider__arrow_right productslider__arrow_right"><img src="img/sliderleft.svg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.blockheader -->
+            <div class="productslider">
+              <div class="productslider__wrapper">
+                <div class="productslider__container slider__container">
+                  <div class="productslider__arrows onlyDesktop">
+                    <div class="slider__arrow slider__arrow_left productslider__arrow_left"><img src="img/sliderleft.svg" alt=""></div>
+                    <div class="slider__arrow slider__arrow_right productslider__arrow_right"><img src="img/sliderleft.svg" alt=""></div>
+                  </div>
+                  <div class="productslider__slider ">
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Щит с изображением одного знака флуоресцентный ... </a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product3.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Лежачий полицейский 
+                                (искусственная дорожная ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product4.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                    <div class="productslider__slide ">
+                      <div class="productslider__item">
+                        <div class="productcard">
+                          <div class="productcard__wrapper">                     
+                            <a href="#" class="productcard__images productcard__images_mobile ">
+                              <div class="productcard__img">
+                                <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                               
+                              </div> 
+                            </a>
+                            <!-- /.productcard__images -->     
+                            <div class="productcard__stock instock">
+                              <img src="img/stock.svg" alt=""><span>В наличии</span>
+                            </div>                 
+                            <div class="productcard__title">
+                              <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                            </div>
+                            <div class="productcard__buy">
+                              <div class="productcard__prices">
+                                <div class="productcard__topprice">
+                                  <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                  <div class="productcard__badge">12%</div>
+                                </div>
+                                <!-- /.productcard__oldprice -->
+                                <div class="productcard__mainprice">
+                                  <div class="productcard__price">
+                                    <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                  </div>
+                                  <!-- /.productcard__price -->
+                                </div>
+                                <!-- /.productcard__mainprice -->
+                              </div>
+                              <!-- /.productcard__prices -->
+                              <div class="productcard__button">
+                                <button class="productcard__addtocart btn "></button>
+                              </div>
+                            </div>
+                            <!-- /.productcard__buy -->
+                            
+                          </div>
+                          <!-- /.productcard__wrapper -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <div class="pageblocksl productslider" data-block="productslider">
+          <div class="container">
+            <div class="blockheader flex items-center content-between">
+              <div class="blockheader__left">
+                <h2>Вы смотрели</h2>
+                <a href="#">Смотреть все</a>
+              </div>
+              <!-- /.blockheader__left -->
+              <div>
+                <div class="sliderarrows flex onlyMobile">
+                  <div class="slider__arrow slider__arrow_left productslider__arrow_left"><img src="img/sliderleft.svg" alt=""></div>
+                  <div class="slider__arrow slider__arrow_right productslider__arrow_right"><img src="img/sliderleft.svg" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <!-- /.blockheader -->
+            <div class="productslider__wrapper">
+              <div class="productslider__container">
+                <div class="productslider__slider">
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                  <div class="productslider__slide ">
+                    <div class="productslider__item">
+                      <div class="productcard">
+                        <div class="productcard__wrapper">                     
+                          <a href="#" class="productcard__images productcard__images_mobile ">
+                            <div class="productcard__img">
+                              <div class="productcard_mslideimg"><img src="img/product1.png"></div>
+                             
+                            </div> 
+                          </a>
+                          <!-- /.productcard__images -->     
+                          <div class="productcard__stock instock">
+                            <img src="img/stock.svg" alt=""><span>В наличии</span>
+                          </div>                 
+                          <div class="productcard__title">
+                            <a href="">Cтолбик гибкий черный 750мм с квадратным сьемным ...</a>
+                          </div>
+                          <div class="productcard__buy">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">102 230 <span class="rouble">₽</span></div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">89 230 <span class="rouble">₽</span></div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                            <!-- /.productcard__prices -->
+                            <div class="productcard__button">
+                              <button class="productcard__addtocart btn "></button>
+                            </div>
+                          </div>
+                          <!-- /.productcard__buy -->
+                          
+                        </div>
+                        <!-- /.productcard__wrapper -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.productslider__slide r -->
+              </div>
+              <!-- /.productslider__container -->
+            </div>
+            <!-- /.productslider__wrapper -->
+          </div>
+          <!-- /.container -->
+        </div>
+      </div>
+      <!-- /.productpage__footer -->
+    </div>
+    <!-- /.productpage -->
+  </div>
+  <!-- /.page -->
+</main>
+<div class="modal fade" tabindex="-1" role="dialog" id="popup_addproduct">
+  <div class="modal-dialog modal-dialog_product" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal-title modal-title_left">Товар добавлен в корзину</div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"><img src="img/closebutton.svg" alt="" /></span>
+        </button>
+        <div class="modal-body">
+          <div class="modalproduct">
+            <div class="modalproduct__main">
+              <div class="modalproduct__product">
+                <div class="minicard">
+                  <div class="minicard__wrapper">
+                    <div class="minicard__left">
+                      <div class="minicard__image">
+                        <img src="img/product1.png" alt="" />
+                      </div>
+                      <div class="minicard__info onlyMobile">
+                        <div class="minicard__title">Колбаса сырокопченая “Прошутто”</div>
+                        <div class="minicard__right">
+                          <div class="minicard__price">
+                            <div class="productcard__prices">
+                              <div class="productcard__topprice">
+                                <div class="productcard__oldprice">762.92</div>
+                                <div class="productcard__badge">12%</div>
+                              </div>
+                              <!-- /.productcard__oldprice -->
+                              <div class="productcard__mainprice">
+                                <div class="productcard__price">
+                                  <div class="productcard__pricevalue">674.94</div>
+                                  <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                                </div>
+                                <!-- /.productcard__price -->
+                              </div>
+                              <!-- /.productcard__mainprice -->
+                            </div>
+                          </div>
+                          <!-- /.minicard__price -->
+                        </div>
+                      </div>
+                      <!-- /.minicard__info -->
+                      <div class="minicard__main">
+                        <div class="minicard__title onlyDesktop">Колбаса сырокопченая “Прошутто”</div>
+                        <!-- /.minicard__title -->
+                        <div class="minicard__buyblock">
+                          <div class="detailbuy__options">
+                            <div class="detailbuy__checkbox imgcheckbox">
+                              <label for="option1" class="imgcheckbox__label">
+                                <input type="radio" name="radio" id="option1" class="imgcheckbox__input" checked />
+                                <span class="imgcheckbox__content">
+                                  <img src="img/upakovka.svg" alt="" class="imgcheckbox__icon" />
+                                  <span class="imgcheckbox__title">Упаковка</span>
+                                </span>
+                              </label>
+                            </div>
+                            <!-- /.detailbuy__checkbox -->
+                            <div class="detailbuy__checkbox imgcheckbox">
+                              <label for="option2" class="imgcheckbox__label">
+                                <input type="radio" name="radio" id="option2" class="imgcheckbox__input" />
+                                <span class="imgcheckbox__content">
+                                  <img src="img/narezka.svg" alt="" class="imgcheckbox__icon" />
+                                  <span class="imgcheckbox__title">Нарезка</span>
+                                </span>
+                              </label>
+                            </div>
+                            <!-- /.detailbuy__checkbox -->
+                          </div>
+                          <!-- /.detailbuy__options -->
+                          <div class="minicard__count">
+                            <div class="buyblock__quantity">
+                              <div class="quantity">
+                                <input type="button" value="–" class="quantity-minus" data-field="quantity" />
+                                <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field" />
+                                <input type="button" value="+" class="quantity-plus" data-field="quantity" />
+                              </div>
+                            </div>
+                            <div class="minicard__amount">
+                              <div class="minicard__pricecount">674.94 <span class="rouble">₽</span>/кг.</div>
+                            </div>
+                          </div>
+                          <!-- /.minicard__count -->
+
+                          <!-- /.minicard__amount -->
+                        </div>
+                        <!-- /.minicard__buyblock -->
+                      </div>
+                      <!-- /.minicard__main -->
+                    </div>
+                    <div class="minicard__right onlyDesktop">
+                      <div class="minicard__pricetitle">Итого</div>
+                      <div class="minicard__price">
+                        <div class="productcard__prices">
+                          <div class="productcard__topprice">
+                            <div class="productcard__oldprice">762.92</div>
+                            <div class="productcard__badge">12%</div>
+                          </div>
+                          <!-- /.productcard__oldprice -->
+                          <div class="productcard__mainprice">
+                            <div class="productcard__price">
+                              <div class="productcard__pricevalue">674.94</div>
+                              <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                            </div>
+                            <!-- /.productcard__price -->
+                          </div>
+                          <!-- /.productcard__mainprice -->
+                        </div>
+                      </div>
+                      <!-- /.minicard__price -->
+                    </div>
+                  </div>
+                  <!-- /.minicard__wrapper -->
+                </div>
+                <!-- /.minicard -->
+              </div>
+              <!-- /.modalproduct__product -->
+              <div class="modalproduct__buttons">
+                <a href="#" class="btn_border btn_border--blue">Продолжить покупки</a>
+                <a href="#" class="btn_main">Оформить заказ</a>
+              </div>
+              <!-- /.modalproduct__buttons -->
+            </div>
+            <!-- /.modalproduct__main -->
+            <div class="modalproduct__related">
+              <div class="miniproductslider">
+                <div class="pageblocksl productslider">
+                  <div class="blockheader flex items-center content-between">
+                    <div class="blockheader__left">
+                      <h2>С этим покупают</h2>
+                    </div>
+                    <!-- /.blockheader__left -->
+                    <div>
+                      <div class="sliderarrows flex">
+                        <div class="sliderarrows__left">
+                          <img src="img/left.svg" alt="" />
+                        </div>
+                        <!-- /.sliderarrows__left -->
+                        <div class="sliderarrows__right">
+                          <img src="img/right.svg" alt="" />
+                        </div>
+                        <!-- /.sliderarrows__right -->
+                      </div>
+                      <!-- /.sliderarrows -->
+                    </div>
+                  </div>
+                  <!-- /.blockheader -->
+                  <div class="productslider__wrapper">
+                    <div class="productslider__container wrap-modal-slider">
+                      <div class="productslider__modalslider">
+                        <div class="productslider__slide">
+                          <div class="productslider__item">
+                            <div class="productcard">
+                              <div class="productcard__wrapper">
+                                <div class="productcard__left">
+                                  <a href="#" class="productcard__images">
+                                    <div class="productcard__img">
+                                      <img src="img/product.jpg" />
+                                    </div>
+                                  </a>
+                                  <!-- /.productcard__images -->
+                                </div>
+                                <!-- /.productcard__left -->
+                                <div class="productcard__right">
+                                  <div class="productcard__title">
+                                    <a href="">Шейка копчено-вареная Московская</a>
+                                  </div>
+                                  <div class="productcard__buy">
+                                    <div class="productcard__prices">
+                                      <div class="productcard__topprice">
+                                        <div class="productcard__oldprice">762.92</div>
+                                        <div class="productcard__badge">12%</div>
+                                      </div>
+                                      <!-- /.productcard__oldprice -->
+                                      <div class="productcard__mainprice">
+                                        <div class="productcard__price">
+                                          <div class="productcard__pricevalue">674.94</div>
+                                          <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                                        </div>
+                                        <!-- /.productcard__price -->
+                                      </div>
+                                      <!-- /.productcard__mainprice -->
+                                    </div>
+                                    <!-- /.productcard__prices -->
+                                    <div class="productcard__button">
+                                      <button class="productcard__addtocart btn "></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.productcard__wrapper -->
+                            </div>
+                            <!-- /.productcard -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide">
+                          <div class="productslider__item">
+                            <div class="productcard">
+                              <div class="productcard__wrapper">
+                                <div class="productcard__left">
+                                  <a href="#" class="productcard__images">
+                                    <div class="productcard__img">
+                                      <img src="img/product.jpg" />
+                                    </div>
+                                  </a>
+                                  <!-- /.productcard__images -->
+                                </div>
+                                <!-- /.productcard__left -->
+                                <div class="productcard__right">
+                                  <div class="productcard__title">
+                                    <a href="">Шейка копчено-вареная Московская</a>
+                                  </div>
+                                  <div class="productcard__buy">
+                                    <div class="productcard__prices">
+                                      <div class="productcard__topprice">
+                                        <div class="productcard__oldprice">762.92</div>
+                                        <div class="productcard__badge">12%</div>
+                                      </div>
+                                      <!-- /.productcard__oldprice -->
+                                      <div class="productcard__mainprice">
+                                        <div class="productcard__price">
+                                          <div class="productcard__pricevalue">674.94</div>
+                                          <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                                        </div>
+                                        <!-- /.productcard__price -->
+                                      </div>
+                                      <!-- /.productcard__mainprice -->
+                                    </div>
+                                    <!-- /.productcard__prices -->
+                                    <div class="productcard__button">
+                                      <button class="productcard__addtocart btn "></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.productcard__wrapper -->
+                            </div>
+                            <!-- /.productcard -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide">
+                          <div class="productslider__item">
+                            <div class="productcard">
+                              <div class="productcard__wrapper">
+                                <div class="productcard__left">
+                                  <a href="#" class="productcard__images">
+                                    <div class="productcard__img">
+                                      <img src="img/product.jpg" />
+                                    </div>
+                                  </a>
+                                  <!-- /.productcard__images -->
+                                </div>
+                                <!-- /.productcard__left -->
+                                <div class="productcard__right">
+                                  <div class="productcard__title">
+                                    <a href="">Шейка копчено-вареная Московская</a>
+                                  </div>
+                                  <div class="productcard__buy">
+                                    <div class="productcard__prices">
+                                      <div class="productcard__topprice">
+                                        <div class="productcard__oldprice">762.92</div>
+                                        <div class="productcard__badge">12%</div>
+                                      </div>
+                                      <!-- /.productcard__oldprice -->
+                                      <div class="productcard__mainprice">
+                                        <div class="productcard__price">
+                                          <div class="productcard__pricevalue">674.94</div>
+                                          <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                                        </div>
+                                        <!-- /.productcard__price -->
+                                      </div>
+                                      <!-- /.productcard__mainprice -->
+                                    </div>
+                                    <!-- /.productcard__prices -->
+                                    <div class="productcard__button">
+                                      <button class="productcard__addtocart btn "></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.productcard__wrapper -->
+                            </div>
+                            <!-- /.productcard -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                        <div class="productslider__slide">
+                          <div class="productslider__item">
+                            <div class="productcard">
+                              <div class="productcard__wrapper">
+                                <div class="productcard__left">
+                                  <a href="#" class="productcard__images">
+                                    <div class="productcard__img">
+                                      <img src="img/product.jpg" />
+                                    </div>
+                                  </a>
+                                  <!-- /.productcard__images -->
+                                </div>
+                                <!-- /.productcard__left -->
+                                <div class="productcard__right">
+                                  <div class="productcard__title">
+                                    <a href="">Шейка копчено-вареная Московская</a>
+                                  </div>
+                                  <div class="productcard__buy">
+                                    <div class="productcard__prices">
+                                      <div class="productcard__topprice">
+                                        <div class="productcard__oldprice">762.92</div>
+                                        <div class="productcard__badge">12%</div>
+                                      </div>
+                                      <!-- /.productcard__oldprice -->
+                                      <div class="productcard__mainprice">
+                                        <div class="productcard__price">
+                                          <div class="productcard__pricevalue">674.94</div>
+                                          <div class="productcard__priceunit"><span class="rouble">₽</span>/кг</div>
+                                        </div>
+                                        <!-- /.productcard__price -->
+                                      </div>
+                                      <!-- /.productcard__mainprice -->
+                                    </div>
+                                    <!-- /.productcard__prices -->
+                                    <div class="productcard__button">
+                                      <button class="productcard__addtocart btn "></button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- /.productcard__wrapper -->
+                            </div>
+                            <!-- /.productcard -->
+                          </div>
+                          <!-- /.productslider__item -->
+                        </div>
+                        <!-- /.productslider__slide  -->
+                      </div>
+                      <!-- /.productslider__slide r -->
+                    </div>
+                    <!-- /.productslider__container -->
+                  </div>
+                  <!-- /.productslider__wrapper -->
+                </div>
+                <!-- /.pageblock -->
+              </div>
+              <!-- /.miniproductslider -->
+            </div>
+            <!-- /.modalproduct__related -->
+          </div>
+          <!-- /.modalproduct -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="pageblock  ">
+  <div class="pageform">
+    <div class="container">
+      <div class="pageform__wrapper grayblock">
+        <div class="pageform__main">
+        <div class="pageform__content">
+          <div class="pageform__title titleborder">Не знаете что выбрать?</div>
+          <div class="pageform__subtitle">Воспользуйтесь бесплатной консультацией</div>
+          <div class="pageform__text">Наш менеджер свяжется с вами и поможет с выбором правильной модели и размеров.</div>
+        </div>
+        <div class="pageform__form">
+          <div class="formblock">
+            <form action="">  
+              <div class="formblock__row">
+                <div class="formblock__col">
+                  <div class="formblock__label">Ваше имя<span class="required">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text">
+                  </div>
+                </div>
+                <div class="formblock__col">
+                  <div class="formblock__label">Ваш email<span class="required">*</span></div>
+                  <div class="formblock__input">
+                    <input type="text" class="input-error">
+                    <span class="input-errortext">email не может содержать символы: 123</span>
+                  </div>
+                </div>
+              </div>
+              <div class="formblock__row">
+                <div class="formblock__col formblock__col_full">
+                  <div class="formblock__label">Ваше сообщение</div>
+                  <div class="formblock__input">
+                    <textarea name="" id="" rows="1"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="formblock__row formblock__row_submit">
+                <div class="formblock__col">
+                  <div class="formblock__check">
+                    Нажимая кнопку “Отправить”, вы даете согласие на обработку своих <a href="">персональных данных</a> 
+                  </div>
+                </div>
+                <div class="formblock__col">
+                  <div class="formblock__button" type="submit"><button class="btn btn_main">Отправить</button></div>
+                </div>
+              </div>
+          
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <script>
+  $(".js-addmodal").on("click", function (e) {
+    e.preventDefault();
+    $(this).addClass('active')
+    $("#popup_addproduct").modal("show");
+  });
+  $("#popup_addproduct").on("shown.bs.modal", function (e) {
+    $(".wrap-modal-slider .productslider__modalslider").slick("setPosition");
+    $(".wrap-modal-slider").addClass("open");
+  });
+</script> -->
+<%= _.template(require('../includes/footer.html').default)(data) %>

@@ -1,0 +1,92 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %>
+<%= _.template(require('../includes/head.html').default)(data) %>
+<%= _.template(require('../includes/header.html').default)(data) %>
+<style>
+  li {
+    margin-bottom: 15px;
+    list-style: none;
+    display: inline-block;
+  }
+</style>
+<main>
+    <div class="container">
+
+      <br><br>
+
+      <a href="#popup_callback" data-toggle='modal' class="btn btn_main"> Задать вопрос</a>
+
+
+      <br><br>
+
+    </div><!-- /.container -->
+</main>
+
+
+<div class="modal modal_small fade" tabindex="-1" role="dialog" id='popup_callback'>
+  <div class="modal-dialog" role="document">
+    <div class="modalwrapper">
+      <div class="modal-content">
+        <div class="modal__header">
+          <div class="modal-title">Связаться с нами
+          </div>
+          <div class="modal-subtitle">Введите некоторую информацию, и наш менеджер свяжеться с вами в ближайшее время!
+          </div>
+        </div>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">
+            <img src="img/closebutton.svg" alt="">
+          </span>
+        </button>
+        <div class="modal-body">
+          <form action="">
+            <div class="formblock">
+              <div class="formblock__main">
+                <div class="formblock__input">
+                  <input type="text" placeholder="Ваше имя" class='input-error' value='123'>
+                  <span class="input-errortext">Имя не может содержать символы: 123</span>
+
+                </div><!-- /.formblock__input -->
+                <div class="formblock__input">
+                  <input type="tel" placeholder='7 (___) ___-__-__'>
+                </div><!-- /.formblock__input -->
+
+                <div class="formblock__input">
+                  <input type="email" placeholder='E-mail'>
+                </div><!-- /.formblock__input -->
+
+                <div class="formblock__input">
+                  <textarea name="" id=""  rows="3" placeholder="Здесь может быть ваш комментарий..."></textarea>
+                </div><!-- /.formblock__input -->
+
+              </div><!-- /.formblock__main -->
+              <div class="formblock__check">
+                <div>
+                  Нажимая на кнопку "Отправить", вы даете согласие на обработку <a href="#">персональных данных</a> 
+                </div>
+               <!--  <div class="check">
+                  <input type="checkbox" id="agree" checked="checked" value="Y">
+                  <label for="agree">Даю свое согласие на обработку персональных данных, соглашаюсь <a href=""> с политикой конфиденциальности</a> и принимаю <a href="">условия оферты</a>
+                  </label>
+                </div> -->
+              </div><!-- /.formblock__check -->
+              <div class="modal-submit modal-submit_small">
+                <div class="buttonsrow">
+                  <div class="buttonsrow__item buttonsrow__item_full">
+                    <button type='submit' class='btn btn_main'>Отправить</button>
+                  </div>
+                  <!-- /.buttonsrow__item -->
+                </div>
+                <!-- /.buttonsrow -->
+              </div>
+            </div><!-- /.formblock -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= _.template(require('../includes/footer.html').default)(data) %>

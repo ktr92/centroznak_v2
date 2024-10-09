@@ -1,0 +1,169 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="page mb-0">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="container">
+      <div class="pageheader pageheader__type2">
+        <h1>Доставка и оплата</h1>
+      </div>
+      <div class="customblock customblock_flex">
+        
+        <div class="customblock__left">
+          <div class="customblock__image">
+            <img src="img/deliverymap.png" alt="">
+          </div>
+        </div>
+        <div class="customblock__right">
+          <div class="customblock__content">
+            <div class="customblock__title"> 
+              <h2>Быстро и надежно доставим <br>
+                товар по России! <img src="img/checkicon.svg" alt=""></h2>
+            </div>
+            <!-- /.customblock__title -->
+            <div class="customblock__block">
+              <div class="customblock__text">
+              <p>Наш отдел логистики создан специально для обеспечения наиболее выгодного и удобного способа доставки нашей продукции до Вашего склада.</p>  
+                <p>В зависимости от параметров отправляемого груза, наши специалисты выберут наиболее подходящий вариант перевозки в Ваш город</p>
+               
+              </div>
+            </div>      
+            <div class="customblock__block">
+              <div class="card card_small">
+                <div class="card__wrapper">
+                  <div class="card__icon">
+                    <div class="card__img"><img src="img/clockg.svg" alt=""></div>
+                  </div>
+                  <div class="card__content">
+                    <div class="card__caption">Режим работы</div>
+                    <div class="card__text"><span class="card__textrow">ПН-ПТ: 09:00 - 18:00</span><span class="gray">МСК</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>     
+          </div>
+          <!-- /.customblock__content -->
+        </div>
+      </div>
+      <!-- /.customblock -->
+    </div>
+    <div class="customblock customblock_gray mb-0">
+
+            <div class="container">
+      <h2>Доставка по России</h2>
+                <div class="text"><p>Мы сотрудничаем с различными транспортными компаниями на всей территории нашей страны. Отправка товаров осуществляется ежедневно, в день зачисления денежных средств на расчетный счет. На некоторые товары, например изделия из резины, действует акция, по которой Вы получаете товар в Вашем городе по прайсовой цене. Стоимость доставки в Ваш город Вы можете рассчитать самостоятельно, воспользовавшись калькуляторами на сайте транспортных компаний</p></div>
+                <div class="logos">
+                  <div class="logos__items">
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos1.png" alt="Деловые линии"></div>
+                        <div class="logos__name">Деловые линии</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos2.png" alt="CДЭК"></div>
+                        <div class="logos__name">CДЭК</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos3.png" alt="ПЭК"></div>
+                        <div class="logos__name">ПЭК</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos4.png" alt="Байкал сервис"></div>
+                        <div class="logos__name">Байкал сервис</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos5.png" alt="Пони экспресс"></div>
+                        <div class="logos__name">Пони экспресс</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos6.png" alt="DPD"></div>
+                        <div class="logos__name">DPD</div>
+                      </div>
+                    </div>
+                    <div class="logos__item">
+                      <div class="logos__content">
+                        <div class="logos__img"><img src="img/logos7.png" alt="Энергия"></div>
+                        <div class="logos__name">Энергия</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  </div>
+</div>
+
+<div class="customblock customblock_moscow">
+  <div class="mask">
+  <div class="container">
+    <h2>Доставка по Москве и Московской области</h2>
+    <div class="text">
+      <p>Осуществляется регулярно <b>2 раза в неделю</b>. Как правило, это вторник и четверг. Если Вы хотите сэкономить свое время и получить заказную продукцию на своем складе в Москве или Московской области - внимательно заполняйте все поля при оформлении заказа. Обычно стоимость доставки в пределах МКАД составляет 1000<span class="rouble">₽</span></p>
+    </div>
+  </div>
+  </div>
+</div>
+
+<div class="customblock customblock_gray  mb-0 mt-0 ">
+
+  <div class="container">
+  <h2>Памятка покупателю</h2>
+      <div class="checklist">
+        <ul>
+          <li>Заказ будет доставлен в удобный для вас день с временным интервалом не менее 4 часов, заранее согласованным с менеджером нашей компании.</li>
+          <li>Курьер позвонит вам и уточнит время приезда.</li>
+          <li>Для уточнения деталей и внесения изменений по доставке свяжитесь с вашим менеджером.</li>
+          <li>Если доставка осуществляется на закрытую для въезда территорию, для получения товара встретьте курьера у ворот или заранее оформите ему пропуск, разрешающий въезд. В данном случае все расходы по оформлению необходимых для допуска документов берет на себя покупатель.</li>
+          <li>При получении товара проверьте коробку на отсутствие повреждений, следов вскрытия, помятостей. Затем вскройте упаковку, осмотрите внимательно товар, проверьте комплектацию.</li>
+          <li>Если заказ был оформлен от имени юридического лица, для получения товара необходимо предоставить доверенность от организации или печать. Без необходимых документов или печати отгрузка товаров не производится. Повторная доставка является платной услугой и оплачивается отдельно.</li>
+          <li>После получения товара вам нужно будет расписаться в маршрутном листе курьера, что будет свидетельствовать о том, что вы приняли заказ (товар) надлежащего вида и в полной комплектации.</li>
+          <li>Заказ будет доставлен в удобный для вас день с временным интервалом не менее 4 часов, заранее согласованным с менеджером нашей компании.</li>
+          <li>Вместе с заказом <b>вы получаете</b>:
+            <ul>
+              <li>Товарный чек — для физических лиц</li>
+              <li>Оригинал счета, накладную, счет-фактуру — для юридических лиц</li>
+              <li>По требованию: гарантийный талон с печатью и инструкцию по эксплуатации (технический паспорт, декларации соответствия)</li>
+            </ul>
+          </li>
+          
+        </ul>
+      </div>
+  </div>
+</div>
+
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>

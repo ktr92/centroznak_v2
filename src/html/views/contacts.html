@@ -1,0 +1,172 @@
+<% var data = {
+  title: "MAIN",
+  author: ""
+  }; %><%= _.template(require('../includes/head.html').default)(data) %><%= _.template(require('../includes/header.html').default)(data) %> <main>
+  <div class="page pb-0 ">
+    <div class="breadcrumbs">
+      <div class="container">
+        <div class="breadcrumbs__items">
+          <ul>
+            <li>
+              <a href="/">
+                <span>
+                  <img src="img/Home.svg" alt="">
+                </span>
+              </a>
+            </li>
+            <li>
+              <a href="">
+                <span>Каталог</span>
+              </a>
+            </li>
+            <li>
+              <span>Мясо, птица</span>
+            </li>
+          </ul>
+        </div>
+        <!-- /.breadcrumbs__items -->
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.breadcrumbs -->
+    <div class="container"> 
+    
+      <div class="contactspage">
+          <div class="pageheader pageheader__type2">
+            <h1>Контакты</h1>
+          </div>
+          <div class="customblock__content">
+            <div class="customblock__row">
+              <div class="customblock__col customblock__col_1">
+                <div class="customblock__caption">Москва</div>
+                <div class="customblock__content">
+                  <a href="tel:84993943931">8 (499) 394-39-31</a>
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_2">
+                <div class="customblock__caption">Регионы</div>
+                <div class="customblock__content">
+                  <a href="tel:88004446560">8 (800) 444-65-60</a>
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_3">
+                <div class="customblock__caption">E-mail</div>
+                <div class="customblock__content">
+                  <a href="mailto:centroznak@gmail.com">centroznak@gmail.com</a>
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_4 mr-0">
+                <div class="customblock__content">
+                  <div class="socials">
+                    <div class="socials__items">
+                      <div class="socials__item">
+                        <a href=""><img src="img/social1.svg" alt=""></a>
+                      </div>
+                      <div class="socials__item">
+                        <a href=""><img src="img/social12.svg" alt=""></a>
+                      </div>
+                      <div class="socials__item">
+                        <a href=""><img src="img/social13.svg" alt=""></a>
+                      </div>
+                      <div class="socials__item">
+                        <a href=""><img src="img/social14.svg" alt=""></a>
+                      </div>
+                      <div class="socials__item">
+                        <a href=""><img src="img/social15.svg" alt=""></a>
+                      </div>
+                    </div><!-- /.socials__items -->
+                  </div>
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_5">
+                <div class="customblock__caption">Адрес</div>
+                <div class="customblock__content">
+                  Россия, 141701, г. Долгопрудный, Лихачевский проезд, 4, строение 1, офис 523
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_6">
+                <div class="customblock__caption">Представительство в Республике Крым</div>
+                <div class="customblock__content">
+                  ООО “ИТЭБ”, г. Симферополь, ул. Козлова, д.30, лит. А, 1 этаж
+                </div>
+              </div>
+              <div class="customblock__col customblock__col_7">
+                <div class="customblock__caption">Телефон</div>
+                <div class="customblock__content">
+                  <a href="tel:89787723846">8 (978) 772-38-46</a>
+                  <div class="customblock_name">Сергей Минаев</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+      <!-- /.customblock -->
+
+      <div class="caontacsmap">
+        <div class="map" id="map">
+          <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9e0c81c50e34abb093ed141c80e2a77162c9eae4892c687c31a86cd40e5a3d83&amp;source=constructor" width="100%" height="505" frameborder="0"></iframe>
+        </div>
+      </div>
+
+
+      <div class="pageblock  ">
+        <div class="pageform">
+          <div class="container">
+            <div class="pageform__wrapper grayblock">
+              <div class="pageform__main">
+              <div class="pageform__content">
+                <div class="pageform__title titleborder">Остались вопросы?</div>
+                <div class="pageform__subtitle">Задайте их нам прямо сейчас!</div>
+                <div class="pageform__text">Наш менеджер свяжется с вами и отвтит на все ваши вопросы.</div>
+              </div>
+              <div class="pageform__form">
+                <div class="formblock">
+                  <form action="">  
+                    <div class="formblock__row">
+                      <div class="formblock__col">
+                        <div class="formblock__label">Ваше имя<span class="required">*</span></div>
+                        <div class="formblock__input">
+                          <input type="text">
+                        </div>
+                      </div>
+                      <div class="formblock__col">
+                        <div class="formblock__label">Ваш email<span class="required">*</span></div>
+                        <div class="formblock__input">
+                          <input type="text" class="input-error">
+                          <span class="input-errortext">email не может содержать символы: 123</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formblock__row">
+                      <div class="formblock__col formblock__col_full">
+                        <div class="formblock__label">Ваше сообщение</div>
+                        <div class="formblock__input">
+                          <textarea name="" id="" rows="1"></textarea>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="formblock__row formblock__row_submit">
+                      <div class="formblock__col">
+                        <div class="formblock__check">
+                          Нажимая кнопку “Отправить”, вы даете согласие на обработку своих <a href="">персональных данных</a> 
+                        </div>
+                      </div>
+                      <div class="formblock__col">
+                        <div class="formblock__button" type="submit"><button class="btn btn_main">Отправить</button></div>
+                      </div>
+                    </div>
+                
+                  </form>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</main><%= _.template(require('../includes/footer.html').default)(data) %>
