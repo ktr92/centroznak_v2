@@ -48,6 +48,49 @@ $(document).ready(function () {
     })
   });
 
+  $(".homenews_v2").each(function () {
+    $(this).slick({
+      dots: false,
+      arrows: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      gap: 22,
+      /*   autoplay: true,
+        autoplaySpeed: 3000, */
+      nextArrow: $(this).closest(".imgsliderblock").find(".slider__arrow_right"),
+      prevArrow: $(this).closest(".imgsliderblock").find(".slider__arrow_left"),
+      responsive: [
+        {
+          breakpoint: 999,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            dots: true
+          },
+        },
+        {
+          breakpoint: 767,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+            dots: true
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            fade: true,
+            slidesToScroll: 1,
+            dots: true
+          },
+        },
+
+      ],
+    })
+  });
+
   var something = (function () {
     var executed = false
     return function () {
